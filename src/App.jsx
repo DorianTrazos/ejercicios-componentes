@@ -1,12 +1,21 @@
-import Button from './components/button/Button';
-import Title from './components/title/Title';
-
+import Logo from './components/logo/Logo';
+import Menu from './components/menu/Menu';
+import Section from './components/section/Section';
 
 const App = () => {
-	return <>
-		<Button numberA={3} numberB ={8} />
-		<Title/>
-	</> 
+	return (
+		<>
+			<header>
+				<div>
+					<Logo />
+					<Menu />
+				</div>
+			</header>
+			<main>
+				<Section />
+			</main>
+		</>
+	);
 };
 
 export default App;
